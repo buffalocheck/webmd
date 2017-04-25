@@ -1,0 +1,13 @@
+<h1><%= disease.name %> - <%= disease.severity %> out of 10!</h1>
+<h2>Transmission modes: <% disease.transmission.mode %></h2>
+<h3>
+	<%= disease.description %>
+</h3>
+<h2>Alright, so... if you have these symptoms, you KNOW you got it</h2>
+<ul>
+<% disease.symptoms.forEach(function(s){ %>
+<li class="list-group-item-danger">
+<%= s.name %>
+</li>
+<% }); %>
+</ul>

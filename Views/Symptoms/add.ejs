@@ -1,0 +1,19 @@
+<form method="post" action="/symptoms">
+	<div class="form-group">
+		<label>Name</label>
+		<input type="text" name="name" placeholder="What's your symptom?" class="form-control">
+	</div>
+	<div class="form-group">
+		<label>Description</label>
+		<textarea name="description" class="form-control"></textarea>
+	</div>
+	<div class="form-group">
+		<label>Severity</label>
+		<input type="number" name="severity" placeholder="How bad is it? 1-10" class="form-control"></input>
+	</div>
+	<div class="form-group">
+		<label>Affected Systems</label>
+		<input type="text" name="affectedSystems" placeholder="Where?" class="form-control">
+	</div>
+	<input type="submit" class="btn btn-success" value="Create!">
+</form>
